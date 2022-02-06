@@ -10,6 +10,7 @@ html {
 body {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 main {
   display: flex;
@@ -52,8 +53,8 @@ main {
 }
 .content__container {
   width: 300px;
-  height: 300px;
-  margin-top: 30px;
+  height: 100vh;
+  margin-top: 100px;
   text-align: center;
 }
 h1 {
@@ -80,4 +81,34 @@ button {
 }
 button:hover {
   background-color: rgb(255, 211, 129);
+}
+.footer__info {
+  width: 100vw;
+  height: 80px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  align-self: flex-end;
+}
+.footer__info a {
+  color: white;
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.footer__info a:hover {
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+.footer__info span {
+  color: red;
+  margin-inline-start: 5px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-decoration: underline;
 }
