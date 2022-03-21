@@ -6,8 +6,12 @@ const main = document.querySelector('main')
 
 main.addEventListener('click', (e) => {
   if(e.target == openButton) {
-    popupContainer.style.display = 'flex'
+    popupContainer.style.opacity = '1'
+    popupContainer.style.zIndex = '3'
   } else if (e.target == closeButton || e.target == popupContainer) {
-    popupContainer.style.display = 'none'
+    popupContainer.style.opacity = '0'
+    setTimeout(() => {
+      popupContainer.style.zIndex = '1'
+    }, 400) //the opacity has a transition that takes 400ms, so if the z index changes instantly the page content will get on top of the popup making it look bad.
   }
 })

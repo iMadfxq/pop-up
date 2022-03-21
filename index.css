@@ -31,6 +31,7 @@ main {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.75);
   text-align: center;
+  transition: opacity 400ms;
 }
 .popup {
   width: 300px;
@@ -56,6 +57,7 @@ main {
   height: 100vh;
   margin-top: 50px;
   text-align: center;
+  z-index: 2;
 }
 h1 {
   font-size: 2.4rem;
