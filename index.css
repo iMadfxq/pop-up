@@ -84,6 +84,11 @@ button {
 button:hover {
   background-color: rgb(255, 211, 129);
 }
+
+footer {
+  z-index: 2;
+}
+
 .footer__info {
   width: 100vw;
   height: 80px;
